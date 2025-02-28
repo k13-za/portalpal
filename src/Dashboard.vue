@@ -16,8 +16,10 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 The Welcome widget ( https://github.com/julien-nc/welcome ) has been a very useful
 guiding source for basic dashboard widget and configuration functionality.
 
-SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-SPDX-License-Identifier: AGPL-3.0-or-later
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+ *
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <template>
@@ -95,7 +97,7 @@ export default {
 	},
 	methods: {
 		async getConfig() {
-			const url = generateUrl('/apps/externalportal/config')
+			const url = generateUrl('/apps/portalpal/config')
 			try {
 				const response = await axios.get(url)
 				console.debug('"' + JSON.stringify(response.data) + '"')

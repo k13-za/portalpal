@@ -1,11 +1,11 @@
 {
-  "name": "externalportal",
+  "name": "portalpal",
   "description": "Dashboard Portal Widget",
   "version": "1.3.1",
   "author": "Tuomas Nurmi <dev@opinsys.fi>",
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/puavo-org/externalportal/issues"
+    "url": "https://github.com/puavo-org/portalpal/issues"
   },
   "license": "agpl",
   "private": true,
@@ -33,8 +33,8 @@
     "extends @nextcloud/browserslist-config"
   ],
   "engines": {
-    "node": "^16.0.0",
-    "npm": "^9.0.0"
+    "node": "^16.0.0 || ^20.18.3",
+    "npm": "^9.0.0 || ^10.9.2"
   },
   "devDependencies": {
     "@nextcloud/babel-config": "^1.1.1",

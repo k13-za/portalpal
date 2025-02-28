@@ -1,5 +1,5 @@
 {
-	"name": "nextcloud/externalportal",
+	"name": "nextcloud/portalpal",
 	"description": "Dashboard Portal Widget",
 	"type": "project",
 	"license": "AGPL-3.0-or-later",
@@ -32,7 +32,7 @@
 			"composer/package-versions-deprecated": true
 		},
 		"platform": {
-			"php": "8.0"
+			"php": "8.4.4"
 		}
 	}
 }

@@ -1,6 +1,8 @@
 <!--
-SPDX-FileCopyrightText: Tobias Knöppler 6317548+thecalcaholic@users.noreply.github.com
-SPDX-License-Identifier: AGPL-3.0-or-later
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+ *
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <template>
 	<NcInputField v-bind="{...$attrs, ...$props }"

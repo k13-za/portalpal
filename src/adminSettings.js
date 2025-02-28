@@ -1,5 +1,9 @@
-// SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-// SPDX-License-Identifier: AGPL-3.0-or-later
+/*
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+ *
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 
 import Vue from 'vue'
 import { translate as t, translatePlural as n } from '@nextcloud/l10n'

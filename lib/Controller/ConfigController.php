@@ -1,10 +1,9 @@
 <?php
-/**
- * @copyright Copyright (c) 2022 Opinsys Oy <dev@opinsys.fi>
+ /**
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
  *
- * @author Tuomas Nurmi <tuomas.nurmi@opinsys.fi>
- *
- * @license GNU AGPL version 3 or any later version
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -25,7 +24,7 @@
  *
  */
 
-namespace OCA\ExternalPortal\Controller;
+namespace OCA\PortalPal\Controller;
 
 use OCP\Files\IAppData;
 use OCP\AppFramework\Http\DataDisplayResponse;
@@ -45,7 +44,7 @@ use OCP\IRequest;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\Controller;
 
-use OCA\ExternalPortal\AppInfo\Application;
+use OCA\PortalPal\AppInfo\Application;
 
 class ConfigController extends Controller
 {

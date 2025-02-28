@@ -16,8 +16,10 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 The Welcome widget ( https://github.com/julien-nc/welcome ) has been a very useful
 guiding source for basic dashboard widget and configuration functionality.
 
-SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-SPDX-License-Identifier: AGPL-3.0-or-later
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+ *
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
 <template>
@@ -29,7 +31,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 			<div class="setting">
 				<label for="externaportal-widget-title">
 					<span class="icon icon-file" />
-					Widget title
+					Widget Title
 				</label>
 				<input id="externaportal-widget-title"
 					v-model="state.widgetTitle"
@@ -84,7 +86,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 						<h2>
 							<div aria-labelledby="panel--header--icon--description"
 								aria-hidden="true"
-								class="icon-externalportal"
+								class="icon-portalpal"
 								role="img" />
 							{{ state.widgetTitle || "External Portal" }}
 						</h2>
@@ -118,7 +120,7 @@ export default {
 	props: [],
 	data() {
 		return {
-			state: loadState('externalportal', 'admin-config'),
+			state: loadState('portalpal', 'admin-config'),
 			saving: false,
 		}
 	},
@@ -136,15 +138,15 @@ export default {
 			const req = {
 				values,
 			}
-			const url = generateUrl('/apps/externalportal/admin-config')
+			const url = generateUrl('/apps/portalpal/admin-config')
 			console.debug('"' + JSON.stringify(req) + '"')
 			try {
 				await axios.put(url, req)
 			} catch (e) {
-				showError(t('externalportal', 'Failed to save external portal options') + `: ${e.response?.request?.responseText ?? ''}`)
+				showError(t('portalpal', 'Failed to save external portal options') + `: ${e.response?.request?.responseText ?? ''}`)
 				console.debug(e)
 			}
-			showSuccess(t('externalportal', 'External portal options saved'))
+			showSuccess(t('portalpal', 'External portal options saved'))
 			this.saving = false
 			await this.$refs.dashboard.reload()
 		},
@@ -197,8 +199,8 @@ export default {
 	box-sizing: border-box;
 }
 
-.icon-externalportal {
-	background-image: url('../img/externalportal-dark.svg');
+.icon-portalpal {
+	background-image: url('../img/portalpal-dark.svg');
 	filter: var(--background-invert-if-dark);
 	background-size: 32px;
 	width: 32px;

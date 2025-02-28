@@ -1,5 +1,9 @@
-// SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-// SPDX-License-Identifier: AGPL-3.0-or-later
+/*
+* Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+ *
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 
 import Vue from 'vue'
 
@@ -12,7 +16,7 @@ Vue.prototype.$OCA = OCA
 Vue.prototype.$appVersion = '1.2.0'
 
 document.addEventListener('DOMContentLoaded', () => {
-	OCA.Dashboard.register('externalportal', (el) => {
+	OCA.Dashboard.register('portalpal', (el) => {
 		const View = Vue.extend(Dashboard)
 		const vm = new View({
 			propsData: {},

@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 /**
- * @copyright Copyright (c) 2022 Opinsys Oy <dev@opinsys.fi>
- *
- * @author Tuomas Nurmi <tuomas.nurmi@opinsys.fi>
- *
- * @license GNU AGPL version 3 or any later version
+*  Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+*
+* SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+* SPDX-License-Identifier: AGPL-3.0-or-later
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -22,20 +21,18 @@ declare(strict_types=1);
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  *
-SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-SPDX-License-Identifier: AGPL-3.0-or-later
  *
  */
 
-namespace OCA\ExternalPortal\Dashboard;
+namespace OCA\PortalPal\Dashboard;
 
-use OCA\ExternalPortal\AppInfo\Application;
+use OCA\PortalPal\AppInfo\Application;
 use OCP\Dashboard\IWidget;
 use OCP\IConfig;
 use OCP\IL10N;
 
 //boilerplate structure from https://docs.nextcloud.com/server/latest/developer_manual/digging_deeper/dashboard.html
-class ExternalPortalWidget implements IWidget
+class PortalPalWidget implements IWidget
 {
     private IL10N $l10n;
 
@@ -52,7 +49,7 @@ class ExternalPortalWidget implements IWidget
      */
     public function getId(): string
     {
-        return 'externalportal';
+        return 'portalpal';
     }
 
     /**
@@ -78,7 +75,7 @@ class ExternalPortalWidget implements IWidget
      */
     public function getIconClass(): string
     {
-        return 'icon-externalportal';
+        return 'icon-portalpal';
     }
 
     /**
@@ -94,6 +91,6 @@ class ExternalPortalWidget implements IWidget
      */
     public function load(): void
     {
-        \OCP\Util::addScript('externalportal', 'externalportal-dashboard');
+        \OCP\Util::addScript('portalpal', 'portalpal-dashboard');
     }
 }

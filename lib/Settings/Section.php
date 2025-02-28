@@ -1,11 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright (c) 2022 Opinsys Oy <dev@opinsys.fi>
+ * Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
  *
- * @author Tuomas Nurmi <tuomas.nurmi@opinsys.fi>
- *
- * @license GNU AGPL version 3 or any later version
+ * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -21,12 +20,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  *
-SPDX-FileCopyrightText: Opinsys Oy <dev@opinsys.fi>
-SPDX-License-Identifier: AGPL-3.0-or-later
  *
  */
 
-namespace OCA\ExternalPortal\Settings;
+namespace OCA\PortalPal\Settings;
 
 use OCP\IL10N;
 use OCP\IURLGenerator;
@@ -45,12 +42,12 @@ class Section implements IIconSection
 
     public function getIcon(): string
     {
-        return $this->url->imagePath('externalportal', 'externalportal-dark.svg');
+        return $this->url->imagePath('portalpal', 'portalpal-dark.svg');
     }
 
     public function getID(): string
     {
-        return 'externalportal';
+        return 'portalpal';
     }
 
     public function getName(): string
