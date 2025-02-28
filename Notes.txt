@@ -2,7 +2,197 @@ Building NPM:
 nvm install 20.18.3  # Installs Node v20.18.3 (bundles npm v10+)
 npm install -g npm@9  # Downgrade npm to v9.x
 nvm use 20.18.3
+Building with make
+make $$ make appstore
 
+
+PortalPalWidgetpwd
 class="app-image app-image-icon"
+chown -R www-data:www-data apps-extra && chmod -R 775 apps-extra
 
-{"reqId":"GoZxV0ONmFg0TxeV7cTL","level":3,"time":"2025-02-28T15:13:50+00:00","remoteAddr":"192.168.98.1","user":"kieron-buyskes","app":"no app in context","method":"GET","url":"/ocs/v2.php/apps/dashboard/api/v2/widget-items?widgets%5B%5D=activity","message":"Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","version":"30.0.4.1","exception":{"Exception":"OC\\AppFramework\\Utility\\QueryNotFoundException","Message":"Could not resolve OCA\\PortalPal\\Dashboard\\PortalPalWidget! Class \"OCA\\PortalPal\\Dashboard\\PortalPalWidget\" does not exist","Code":0,"Trace":[{"file":"/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php","line":124,"function":"resolve","class":"OC\\AppFramework\\Utility\\SimpleContainer","type":"->","args":["OCA\\PortalPal\\Dashboard\\PortalPalWidget"]},{"file":"/var/www/html/lib/private/AppFramework/DependencyInjection/DIContainer.php","line":451,"function":"query","class":"OC\\AppFramework\\Utility\\SimpleContainer","type":"->","args":["OCA\\PortalPal\\Dashboard\\PortalPalWidget"]},{"file":"/var/www/html/lib/private/ServerContainer.php","line":137,"function":"queryNoFallback","class":"OC\\AppFramework\\DependencyInjection\\DIContainer","type":"->","args":["OCA\\PortalPal\\Dashboard\\PortalPalWidget"]},{"file":"/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php","line":42,"function":"query","class":"OC\\ServerContainer","type":"->","args":["OCA\\PortalPal\\Dashboard\\PortalPalWidget"]},{"file":"/var/www/html/lib/private/Dashboard/Manager.php","line":65,"function":"get","class":"OC\\AppFramework\\Utility\\SimpleContainer","type":"->","args":["OCA\\PortalPal\\Dashboard\\PortalPalWidget"]},{"file":"/var/www/html/lib/private/Dashboard/Manager.php","line":128,"function":"loadLazyPanels","class":"OC\\Dashboard\\Manager","type":"->","args":[]},{"file":"/var/www/html/apps/dashboard/lib/Controller/DashboardApiController.php","line":64,"function":"getWidgets","class":"OC\\Dashboard\\Manager","type":"->","args":[]},{"file":"/var/www/html/apps/dashboard/lib/Controller/DashboardApiController.php","line":115,"function":"getShownWidgets","class":"OCA\\Dashboard\\Controller\\DashboardApiController","type":"->","args":[["activity"]]},{"file":"/var/www/html/lib/private/AppFramework/Http/Dispatcher.php","line":208,"function":"getWidgetItemsV2","class":"OCA\\Dashboard\\Controller\\DashboardApiController","type":"->","args":[[],7,["activity"]]},{"file":"/var/www/html/lib/private/AppFramework/Http/Dispatcher.php","line":114,"function":"executeController","class":"OC\\AppFramework\\Http\\Dispatcher","type":"->","args":[{"__class__":"OCA\\Dashboard\\Controller\\DashboardApiController"},"getWidgetItemsV2"]},{"file":"/var/www/html/lib/private/AppFramework/App.php","line":161,"function":"dispatch","class":"OC\\AppFramework\\Http\\Dispatcher","type":"->","args":[{"__class__":"OCA\\Dashboard\\Controller\\DashboardApiController"},"getWidgetItemsV2"]},{"file":"/var/www/html/lib/private/Route/Router.php","line":302,"function":"main","class":"OC\\AppFramework\\App","type":"::","args":["OCA\\Dashboard\\Controller\\DashboardApiController","getWidgetItemsV2",{"__class__":"OC\\AppFramework\\DependencyInjection\\DIContainer"},{"_route":"ocs.dashboard.dashboardapi.getwidgetitemsv2"}]},{"file":"/var/www/html/ocs/v1.php","line":43,"function":"match","class":"OC\\Route\\Router","type":"->","args":["/ocsapp/apps/dashboard/api/v2/widget-items"]},{"file":"/var/www/html/ocs/v2.php","line":7,"args":["/var/www/html/ocs/v1.php"],"function":"require_once"}],"File":"/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php","Line":113,"message":"Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget","exception":[],"CustomMessage":"Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget"},"id":"67c1d2cc49e24"}
+
+[no app in context] Error: Could not load lazy dashboard widget: OCA\PortalPal\Dashboard\PortalPalWidget
+	GET /ocs/v2.php/apps/dashboard/api/v2/widget-items?widgets%5B%5D=activity
+	from 192.168.98.1 by baofn-admin at Feb 28, 2025, 7:46:54 PM
+
+
+
+{
+  "reqId": "6UGKG29J7Zgq7fmzNaid",
+  "level": 3,
+  "time": "2025-02-28T17:46:54+00:00",
+  "remoteAddr": "192.168.98.1",
+  "user": "baofn-admin",
+  "app": "no app in context",
+  "method": "GET",
+  "url": "/ocs/v2.php/apps/dashboard/api/v2/widget-items?widgets%5B%5D=activity",
+  "message": "Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0",
+  "version": "30.0.4.1",
+  "exception": {
+    "Exception": "OC\\AppFramework\\Utility\\QueryNotFoundException",
+    "Message": "Could not resolve OCA\\PortalPal\\Dashboard\\PortalPalWidget! Class \"OCA\\PortalPal\\Dashboard\\PortalPalWidget\" does not exist",
+    "Code": 0,
+    "Trace": [
+      {
+        "file": "/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php",
+        "line": 124,
+        "function": "resolve",
+        "class": "OC\\AppFramework\\Utility\\SimpleContainer",
+        "type": "->",
+        "args": [
+          "OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/AppFramework/DependencyInjection/DIContainer.php",
+        "line": 451,
+        "function": "query",
+        "class": "OC\\AppFramework\\Utility\\SimpleContainer",
+        "type": "->",
+        "args": [
+          "OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/ServerContainer.php",
+        "line": 137,
+        "function": "queryNoFallback",
+        "class": "OC\\AppFramework\\DependencyInjection\\DIContainer",
+        "type": "->",
+        "args": [
+          "OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php",
+        "line": 42,
+        "function": "query",
+        "class": "OC\\ServerContainer",
+        "type": "->",
+        "args": [
+          "OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/Dashboard/Manager.php",
+        "line": 65,
+        "function": "get",
+        "class": "OC\\AppFramework\\Utility\\SimpleContainer",
+        "type": "->",
+        "args": [
+          "OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/Dashboard/Manager.php",
+        "line": 128,
+        "function": "loadLazyPanels",
+        "class": "OC\\Dashboard\\Manager",
+        "type": "->",
+        "args": []
+      },
+      {
+        "file": "/var/www/html/apps/dashboard/lib/Controller/DashboardApiController.php",
+        "line": 64,
+        "function": "getWidgets",
+        "class": "OC\\Dashboard\\Manager",
+        "type": "->",
+        "args": []
+      },
+      {
+        "file": "/var/www/html/apps/dashboard/lib/Controller/DashboardApiController.php",
+        "line": 115,
+        "function": "getShownWidgets",
+        "class": "OCA\\Dashboard\\Controller\\DashboardApiController",
+        "type": "->",
+        "args": [
+          [
+            "activity"
+          ]
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/AppFramework/Http/Dispatcher.php",
+        "line": 208,
+        "function": "getWidgetItemsV2",
+        "class": "OCA\\Dashboard\\Controller\\DashboardApiController",
+        "type": "->",
+        "args": [
+          [],
+          7,
+          [
+            "activity"
+          ]
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/AppFramework/Http/Dispatcher.php",
+        "line": 114,
+        "function": "executeController",
+        "class": "OC\\AppFramework\\Http\\Dispatcher",
+        "type": "->",
+        "args": [
+          {
+            "__class__": "OCA\\Dashboard\\Controller\\DashboardApiController"
+          },
+          "getWidgetItemsV2"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/AppFramework/App.php",
+        "line": 161,
+        "function": "dispatch",
+        "class": "OC\\AppFramework\\Http\\Dispatcher",
+        "type": "->",
+        "args": [
+          {
+            "__class__": "OCA\\Dashboard\\Controller\\DashboardApiController"
+          },
+          "getWidgetItemsV2"
+        ]
+      },
+      {
+        "file": "/var/www/html/lib/private/Route/Router.php",
+        "line": 302,
+        "function": "main",
+        "class": "OC\\AppFramework\\App",
+        "type": "::",
+        "args": [
+          "OCA\\Dashboard\\Controller\\DashboardApiController",
+          "getWidgetItemsV2",
+          {
+            "__class__": "OC\\AppFramework\\DependencyInjection\\DIContainer"
+          },
+          {
+            "_route": "ocs.dashboard.dashboardapi.getwidgetitemsv2"
+          }
+        ]
+      },
+      {
+        "file": "/var/www/html/ocs/v1.php",
+        "line": 43,
+        "function": "match",
+        "class": "OC\\Route\\Router",
+        "type": "->",
+        "args": [
+          "/ocsapp/apps/dashboard/api/v2/widget"
+        ]
+      },
+      {
+        "file": "/var/www/html/ocs/v2.php",
+        "line": 7,
+        "args": [
+          "/var/www/html/ocs/v1.php"
+        ],
+        "function": "require_once"
+      }
+    ],
+    "File": "/var/www/html/lib/private/AppFramework/Utility/SimpleContainer.php",
+    "Line": 113,
+    "message": "Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget",
+    "exception": [],
+    "CustomMessage": "Could not load lazy dashboard widget: OCA\\PortalPal\\Dashboard\\PortalPalWidget"
+  },
+  "id": "67c1f69154c39"
+}

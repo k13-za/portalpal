@@ -6,7 +6,6 @@ declare(strict_types=1);
 *
 * SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
 * SPDX-License-Identifier: AGPL-3.0-or-later
- *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
@@ -57,8 +56,8 @@ class PortalPalWidget implements IWidget
      */
     public function getTitle(): string
     {
-        $widgetTitle = $this->config->getAppValue(Application::APP_ID, 'widgetTitle', 'External portal');
-        return $widgetTitle ?: 'External portal';
+        $widgetTitle = $this->config->getAppValue(Application::APP_ID, 'widgetTitle', 'Portal Pal');
+        return $widgetTitle ?: 'Portal Pal';
     }
 
     /**
