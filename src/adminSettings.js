@@ -23,6 +23,6 @@ Vue.prototype.$OCA = OCA
 Vue.prototype.$appVersion = '1.2.0'
 
 export default new Vue({
-	el: '#externalportal_prefs',
+	el: '#portalpal_prefs',
 	render: h => h(AdminSettings),
 })

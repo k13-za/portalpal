@@ -1,7 +1,9 @@
 <?php
 
 declare(strict_types=1);
-// SPDX-FileCopyrightText: Tuomas Nurmi <dev@opinsys.fi>
+//  Copyright (c) 2025 Kudala IoT <kieron@kudalaiot.com>
+
+// SPDX-FileCopyrightText: 2025 Kudala IoT <kieron@kudalaiot.com>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 require_once './vendor/autoload.php';

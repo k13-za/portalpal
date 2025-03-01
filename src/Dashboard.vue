@@ -1,5 +1,5 @@
 <!--
-Nextcloud - External Portal Dashboard
+Nextcloud - Portal Pal Dashboard
 @author Tuomas Nurmi
 @copyright 2022 Opinsys Oy <dev@opinsys.fi>
 This library is free software; you can redistribute it and/or

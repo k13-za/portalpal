@@ -52,7 +52,7 @@ class Section implements IIconSection
 
     public function getName(): string
     {
-        return $this->l->t('External portal');
+        return $this->l->t('Portal Pal');
     }
 
     public function getPriority(): int

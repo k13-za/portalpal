@@ -58,3 +58,21 @@ or:
     phpunit -c phpunit.integration.xml
 
 for integration tests
+
+
+
+
+
+Building NPM:
+nvm install 20.18.3  # Installs Node v20.18.3 (bundles npm v10+)
+npm install -g npm@9  # Downgrade npm to v9.x
+nvm use 20.18.3
+Building with make
+make $$ make appstore
+
+
+PortalPalWidgetpwd
+class="app-image app-image-icon"
+chown -R www-data:www-data apps-extra && chmod -R 775 apps-extra
+
+

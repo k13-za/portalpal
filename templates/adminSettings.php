@@ -27,4 +27,4 @@ $appId = OCA\PortalPal\AppInfo\Application::APP_ID;
 script($appId, $appId . '-admin');
 ?>
 
-<div id="externalportal_prefs"></div>
+<div id="portalpal_prefs"></div>

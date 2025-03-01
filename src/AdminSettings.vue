@@ -1,5 +1,5 @@
 <!--
-Nextcloud - External Portal Dashboard
+Nextcloud - Portal Pal Dashboard
 @author Tuomas Nurmi
 @copyright 2022 Opinsys Oy <dev@opinsys.fi>
 This library is free software; you can redistribute it and/or
@@ -23,10 +23,10 @@ guiding source for basic dashboard widget and configuration functionality.
 -->
 
 <template>
-	<div id="externalportal_prefs" class="section">
+	<div id="portalpal_prefs" class="section">
 		<div class="settings">
 			<h2>
-				External portal settings
+				Portal Pal settings
 			</h2>
 			<div class="setting">
 				<label for="externaportal-widget-title">
@@ -37,7 +37,7 @@ guiding source for basic dashboard widget and configuration functionality.
 					v-model="state.widgetTitle"
 					type="text"
 					:class="{ 'icon-loading-small': saving }"
-					:placeholder="('External portal')">
+					:placeholder="('Portal Pal')">
 			</div>
 			<div class="setting">
 				<label for="extraWide">Make the widget wider when there are many links</label>
@@ -88,10 +88,10 @@ guiding source for basic dashboard widget and configuration functionality.
 								aria-hidden="true"
 								class="icon-portalpal"
 								role="img" />
-							{{ state.widgetTitle || "External Portal" }}
+							{{ state.widgetTitle || "Portal Pal" }}
 						</h2>
 						<span id="panel--header--icon--description" class="hidden-visually">
-							{{ t('dashboard', '"{title} icon"', {title: state.widgetTitle || "External Portal"}) }}
+							{{ t('dashboard', '"{title} icon"', {title: state.widgetTitle || "Portal Pal"}) }}
 						</span>
 					</div>
 					<div class="panel--content">
@@ -143,10 +143,10 @@ export default {
 			try {
 				await axios.put(url, req)
 			} catch (e) {
-				showError(t('portalpal', 'Failed to save external portal options') + `: ${e.response?.request?.responseText ?? ''}`)
+				showError(t('portalpal', 'Failed to save Portal Pal options') + `: ${e.response?.request?.responseText ?? ''}`)
 				console.debug(e)
 			}
-			showSuccess(t('portalpal', 'External portal options saved'))
+			showSuccess(t('portalpal', 'Portal Pal options saved'))
 			this.saving = false
 			await this.$refs.dashboard.reload()
 		},
@@ -155,7 +155,7 @@ export default {
 </script>
 
 <style scoped>
-#externalportal_prefs {
+#portalpal_prefs {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
